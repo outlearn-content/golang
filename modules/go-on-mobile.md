@@ -3,7 +3,7 @@
 "name" : "go-on-mobile",
 "version" : "0.1",
 "title" : "Go on Mobile",
-"description" : "TBD",
+"description" : "How cool would it be to write an app for your Android or iOS phone in your favorite language, Go?",
 "homepage" : "http://talks.golang.org/2015/gophercon-go-on-mobile.slide",
 "canonicalSource" : "http://talks.golang.org/2015/gophercon-go-on-mobile.slide",
 "freshnessDate" : 2015-07-28,

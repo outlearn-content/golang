@@ -3,7 +3,7 @@
 "name" : "delveintogo",
 "version" : "0.1",
 "title" : "Delve Into Go",
-"description" : "TBD",
+"description" : "Learn about Delve, a debugger tailored specifically for Go.",
 "homepage" : "http://go-talks.appspot.com/github.com/derekparker/talks/gophercon-2015/delve-into-go.slide#1",
 "canonicalSource" : "http://go-talks.appspot.com/github.com/derekparker/talks/gophercon-2015/delve-into-go.slide#1",
 "freshnessDate" : 2015-07-28,

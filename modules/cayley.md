@@ -3,7 +3,7 @@
 "name" : "cayley",
 "version" : "0.1",
 "title" : "Cayley: Building a Graph Database",
-"description" : "TBD",
+"description" : "Written in Go, Cayley is a graph database based on technology behind Freebase.com.",
 "homepage" : "https://github.com/gophercon/2015-talks/blob/master/Barak%20Michener%20-%20Cayley:%20Building%20a%20Graph%20Database/Cayley%20-%20Building%20a%20Graph%20Database.pdf",
 "canonicalSource" : "https://github.com/gophercon/2015-talks/blob/master/Barak%20Michener%20-%20Cayley:%20Building%20a%20Graph%20Database/Cayley%20-%20Building%20a%20Graph%20Database.pdf",
 "freshnessDate" : 2015-07-28,

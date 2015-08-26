@@ -3,7 +3,7 @@
 "name" : "how-go-was-made",
 "version" : "0.1",
 "title" : "How Go Was Made",
-"description" : "TBD",
+"description" : "How Go has been developed and how you can contribute going forward.",
 "homepage" : "http://talks.golang.org/2015/how-go-was-made.slide",
 "canonicalSource" : "http://talks.golang.org/2015/how-go-was-made.slide",
 "freshnessDate" : 2015-07-28,

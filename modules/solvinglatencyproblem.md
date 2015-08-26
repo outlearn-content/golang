@@ -3,7 +3,7 @@
 "name" : "solvinglatencyproblem",
 "version" : "0.1",
 "title" : "Go GC: Solving the Latency Problem",
-"description" : "TBD",
+"description" : "This talk presents and discusses the new 1.5 low latency concurrent GC. Motivations will be given, performance numbers will be presented, we will deep dive into some technical challenges, but more importantly we will discuss why this approach fits well with the Go language.",
 "homepage" : "http://talks.golang.org/2015/go-gc.pdf",
 "canonicalSource" : "http://talks.golang.org/2015/go-gc.pdf",
 "freshnessDate" : 2015-07-28,

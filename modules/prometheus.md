@@ -3,7 +3,7 @@
 "name" : "prometheus",
 "version" : "0.1",
 "title" : "Prometheus: Designing and Implementing a Modern Monitoring Solution in Go",
-"description" : "TBD",
+"description" : "This talk will shed light on various aspects of Prometheus from the perspective of a Go developer, from the instrumentation library all the way to the storage backend.",
 "homepage" : "https://github.com/gophercon/2015-talks/blob/master/Bj%C3%B6rn%20Rabenstein%20-%20Prometheus/slides.pdf",
 "canonicalSource" : "https://github.com/gophercon/2015-talks/blob/master/Bj%C3%B6rn%20Rabenstein%20-%20Prometheus/slides.pdf",
 "freshnessDate" : 2015-07-28,

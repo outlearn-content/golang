@@ -3,7 +3,7 @@
 "name" : "evolution-of-go",
 "version" : "0.1",
 "title" : "The Evolution of Go",
-"description" : "TBD",
+"description" : "The past and the future of Go.",
 "homepage" : "http://talks.golang.org/2015/gophercon-goevolution.slide",
 "canonicalSource" : "http://talks.golang.org/2015/gophercon-goevolution.slide",
 "freshnessDate" : 2015-07-28,

@@ -3,7 +3,7 @@
 "name" : "the-roots-of-go",
 "version" : "0.1",
 "title" : "The Roots of Go",
-"description" : "TBD",
+"description" : "In this talk, BG will talk about the origins of the core ideas behind Go and will take you on a “language-archeology” tour where we’ll trace the roots of Go.",
 "homepage" : "https://speakerdeck.com/bg/the-roots-of-go",
 "canonicalSource" : "https://speakerdeck.com/bg/the-roots-of-go",
 "freshnessDate" : 2015-07-28,

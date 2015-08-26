@@ -3,7 +3,7 @@
 "name" : "building-resilient-services",
 "version" : "0.1",
 "title" : "Uptime: Building Resilient Services with Go",
-"description" : "TBD",
+"description" : "Hear about Fog Creek’s first production Go service: a rewrite of their Git and Mercurial SSH reverse proxy from Python.",
 "homepage" : "https://github.com/gophercon/2015-talks/blob/master/Blake%20Caldwell%20-%20Uptime:%20Building%20Resilient%20Services%20with%20Go/2015-GopherCon-Talk-Uptime.pdf",
 "canonicalSource" : "https://github.com/gophercon/2015-talks/blob/master/Blake%20Caldwell%20-%20Uptime:%20Building%20Resilient%20Services%20with%20Go/2015-GopherCon-Talk-Uptime.pdf",
 "freshnessDate" : 2015-07-28,

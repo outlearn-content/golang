@@ -3,7 +3,7 @@
 "name" : "go-dynamic-tools",
 "version" : "0.1",
 "title" : "Go Dynamic Tools",
-"description" : "TBD",
+"description" : "Dynamic tools can provide significant value for small time investment. But frequently they are underappreciated by developers. In this talk I will describe three dynamic tools for Go: data race detector, fuzzing system and execution tracer.",
 "homepage" : "http://talks.golang.org/2015/dynamic-tools.slide",
 "canonicalSource" : "http://talks.golang.org/2015/dynamic-tools.slide",
 "freshnessDate" : 2015-07-28,

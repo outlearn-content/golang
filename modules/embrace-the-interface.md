@@ -3,7 +3,7 @@
 "name" : "embrace-the-interface",
 "version" : "0.1",
 "title" : "Embrace the Interface",
-"description" : "TBD",
+"description" : "Go gives us powerful abstraction through interfaces with no bureaucracy. In my quest to find the right balance between pragmatism and abstraction, I have developed some useful patterns that leverage Go’s interfaces to make code modular, lean and clean.",
 "homepage" : "https://github.com/gophercon/2015-talks/blob/master/Tom%C3%A1s%20Senart%20-%20Embrace%20the%20Interface/ETI.pdf",
 "canonicalSource" : "https://github.com/gophercon/2015-talks/blob/master/Tom%C3%A1s%20Senart%20-%20Embrace%20the%20Interface/ETI.pdf",
 "freshnessDate" : 2015-07-28,

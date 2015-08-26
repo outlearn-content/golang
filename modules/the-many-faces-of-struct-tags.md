@@ -3,7 +3,7 @@
 "name" : "the-many-faces-of-struct-tags",
 "version" : "0.1",
 "title" : "The Many Faces of Struct Tags",
-"description" : "TBD",
+"description" : "Struct tags are a great feature of Go, but in the general Go community they receive almost no attention. In this talk we want to show you some of the cleverest and weirdest uses of struct tags we’ve seen.",
 "homepage" : "https://github.com/gophercon/2015-talks/blob/master/Sam%20Helman%20%26%20Kyle%20Erf%20-%20The%20Many%20Faces%20of%20Struct%20Tags/StructTags.pdf",
 "canonicalSource" : "https://github.com/gophercon/2015-talks/blob/master/Sam%20Helman%20%26%20Kyle%20Erf%20-%20The%20Many%20Faces%20of%20Struct%20Tags/StructTags.pdf",
 "freshnessDate" : 2015-07-28,
