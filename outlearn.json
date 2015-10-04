@@ -30,7 +30,8 @@
         {"module" : "code-generation"},
         {"module" : "the-many-faces-of-struct-tags"},
         {"module" : "betting-the-company-on-go-and-winning"},
-        {"module" : "how-go-was-made"}
+        {"module" : "how-go-was-made"},
+        {"module" : "why-learn-go"}
       ]
     }
   ],
@@ -57,7 +58,8 @@
     {"olm" : "./modules/code-generation.md"},
     {"olm" : "./modules/the-many-faces-of-struct-tags.md"},
     {"olm" : "./modules/betting-the-company-on-go-and-winning.md"},
-    {"olm" : "./modules/how-go-was-made.md"}
+    {"olm" : "./modules/how-go-was-made.md"},
+    {"olm" : "./modules/why-learn-go.md"}
   ],
 
   "assets" : [
