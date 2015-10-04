@@ -32,7 +32,8 @@
         {"module" : "betting-the-company-on-go-and-winning"},
         {"module" : "how-go-was-made"},
         {"module" : "why-learn-go"},
-        {"module" : "command-go"}
+        {"module" : "command-go"},
+        {"module" : "learnxinyminutes"}
       ]
     }
   ],
@@ -61,7 +62,8 @@
     {"olm" : "./modules/betting-the-company-on-go-and-winning.md"},
     {"olm" : "./modules/how-go-was-made.md"},
     {"olm" : "./modules/why-learn-go.md"},
-    {"olm" : "./modules/command-go.md"}
+    {"olm" : "./modules/command-go.md"},
+    {"olm" : "./modules/learnxinyminutes.md"}
   ],
 
   "assets" : [
