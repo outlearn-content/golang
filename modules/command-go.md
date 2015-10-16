@@ -3,7 +3,7 @@
 "name" : "command-go",
 "version" : "0.1",
 "title" : "Command go",
-"description" : "",
+"description" : "Learn more about the command go - a tool for managing Go source code.",
 "freshnessDate" : 2015-07-28,
 "homepage" : "https://golang.org/cmd/go/",
 "canonicalSource" : "https://golang.org/cmd/go/",
@@ -86,57 +86,57 @@ The -i flag installs the packages that are dependencies of the target.
 The build flags are shared by the build, clean, get, install, list, run, and test commands:
 
 ```-a
-	force rebuilding of packages that are already up-to-date.
+  force rebuilding of packages that are already up-to-date.
 -n
-	print the commands but do not run them.
+  print the commands but do not run them.
 -p n
-	the number of builds that can be run in parallel.
-	The default is the number of CPUs available, except
-	on darwin/arm which defaults to 1.
+  the number of builds that can be run in parallel.
+  The default is the number of CPUs available, except
+  on darwin/arm which defaults to 1.
 -race
-	enable data race detection.
-	Supported only on linux/amd64, freebsd/amd64, darwin/amd64 and windows/amd64.
+  enable data race detection.
+  Supported only on linux/amd64, freebsd/amd64, darwin/amd64 and windows/amd64.
 -v
-	print the names of packages as they are compiled.
+  print the names of packages as they are compiled.
 -work
-	print the name of the temporary work directory and
-	do not delete it when exiting.
+  print the name of the temporary work directory and
+  do not delete it when exiting.
 -x
-	print the commands.
+  print the commands.
 
 -asmflags 'flag list'
-	arguments to pass on each go tool asm invocation.
+  arguments to pass on each go tool asm invocation.
 -buildmode mode
-	build mode to use. See 'go help buildmode' for more.
+  build mode to use. See 'go help buildmode' for more.
 -compiler name
-	name of compiler to use, as in runtime.Compiler (gccgo or gc).
+  name of compiler to use, as in runtime.Compiler (gccgo or gc).
 -gccgoflags 'arg list'
-	arguments to pass on each gccgo compiler/linker invocation.
+  arguments to pass on each gccgo compiler/linker invocation.
 -gcflags 'arg list'
-	arguments to pass on each go tool compile invocation.
+  arguments to pass on each go tool compile invocation.
 -installsuffix suffix
-	a suffix to use in the name of the package installation directory,
-	in order to keep output separate from default builds.
-	If using the -race flag, the install suffix is automatically set to race
-	or, if set explicitly, has _race appended to it.  Using a -buildmode
-	option that requires non-default compile flags has a similar effect.
+  a suffix to use in the name of the package installation directory,
+  in order to keep output separate from default builds.
+  If using the -race flag, the install suffix is automatically set to race
+  or, if set explicitly, has _race appended to it.  Using a -buildmode
+  option that requires non-default compile flags has a similar effect.
 -ldflags 'flag list'
-	arguments to pass on each go tool link invocation.
+  arguments to pass on each go tool link invocation.
 -linkshared
-	link against shared libraries previously created with
-	-buildmode=shared
+  link against shared libraries previously created with
+  -buildmode=shared
 -pkgdir dir
-	install and load all packages from dir instead of the usual locations.
-	For example, when building with a non-standard configuration,
-	use -pkgdir to keep generated packages in a separate location.
+  install and load all packages from dir instead of the usual locations.
+  For example, when building with a non-standard configuration,
+  use -pkgdir to keep generated packages in a separate location.
 -tags 'tag list'
-	a list of build tags to consider satisfied during the build.
-	For more information about build tags, see the description of
-	build constraints in the documentation for the go/build package.
+  a list of build tags to consider satisfied during the build.
+  For more information about build tags, see the description of
+  build constraints in the documentation for the go/build package.
 -toolexec 'cmd args'
-	a program to use to invoke toolchain programs like vet and asm.
-	For example, instead of running asm, the go command will run
-	'cmd args /path/to/asm <arguments for asm>'.
+  a program to use to invoke toolchain programs like vet and asm.
+  For example, instead of running asm, the go command will run
+  'cmd args /path/to/asm <arguments for asm>'.
 ```
 
 The list flags accept a space-separated list of strings. To embed spaces in an element in the list, surround it with either single or double quotes.
@@ -237,44 +237,44 @@ Examples:
 
 ```
 go doc
-	Show documentation for current package.
+  Show documentation for current package.
 go doc Foo
-	Show documentation for Foo in the current package.
-	(Foo starts with a capital letter so it cannot match
-	a package path.)
+  Show documentation for Foo in the current package.
+  (Foo starts with a capital letter so it cannot match
+  a package path.)
 go doc encoding/json
-	Show documentation for the encoding/json package.
+  Show documentation for the encoding/json package.
 go doc json
-	Shorthand for encoding/json.
+  Shorthand for encoding/json.
 go doc json.Number (or go doc json.number)
-	Show documentation and method summary for json.Number.
+  Show documentation and method summary for json.Number.
 go doc json.Number.Int64 (or go doc json.number.int64)
-	Show documentation for json.Number's Int64 method.
+  Show documentation for json.Number's Int64 method.
 go doc cmd/doc
-	Show package docs for the doc command.
+  Show package docs for the doc command.
 go doc -cmd cmd/doc
-	Show package docs and exported symbols within the doc command.
+  Show package docs and exported symbols within the doc command.
 go doc template.new
-	Show documentation for html/template's New function.
-	(html/template is lexically before text/template)
+  Show documentation for html/template's New function.
+  (html/template is lexically before text/template)
 go doc text/template.new # One argument
-	Show documentation for text/template's New function.
+  Show documentation for text/template's New function.
 go doc text/template new # Two arguments
-	Show documentation for text/template's New function.
+  Show documentation for text/template's New function.
 ```
 
 Flags:
 
 ```
 -c
-	Respect case when matching symbols.
+  Respect case when matching symbols.
 -cmd
-	Treat a command (package main) like a regular package.
-	Otherwise package main's exported symbols are hidden
-	when showing the package's top-level documentation.
+  Treat a command (package main) like a regular package.
+  Otherwise package main's exported symbols are hidden
+  when showing the package's top-level documentation.
 -u
-	Show documentation for unexported as well as exported
-	symbols and methods.
+  Show documentation for unexported as well as exported
+  symbols and methods.
 ```
 
 <!-- @section -->
@@ -361,17 +361,17 @@ Go generate sets several variables when it runs the generator:
 
 ```
 $GOARCH
-	The execution architecture (arm, amd64, etc.)
+  The execution architecture (arm, amd64, etc.)
 $GOOS
-	The execution operating system (linux, windows, etc.)
+  The execution operating system (linux, windows, etc.)
 $GOFILE
-	The base name of the file.
+  The base name of the file.
 $GOLINE
-	The line number of the directive in the source file.
+  The line number of the directive in the source file.
 $GOPACKAGE
-	The name of the package of the file containing the directive.
+  The name of the package of the file containing the directive.
 $DOLLAR
-	A dollar sign.
+  A dollar sign.
 ```
 
 Other than variable substitution and quoted-string evaluation, no special processing such as "globbing" is performed on the command line.
@@ -402,10 +402,10 @@ Go generate accepts one specific flag:
 
 ```
 -run=""
-	if non-empty, specifies a regular expression to select
-	directives whose full original source text (excluding
-	any trailing spaces and final newline) matches the
-	expression.
+  if non-empty, specifies a regular expression to select
+  directives whose full original source text (excluding
+  any trailing spaces and final newline) matches the
+  expression.
 ```
 
 It also accepts the standard build flags -v, -n, and -x. The -v flag prints the names of packages and files as they are processed. The -n flag prints commands that would be executed. The -x flag prints commands as they are executed.
@@ -543,16 +543,16 @@ The template function "context" returns the build context, defined as:
 
 ```
 type Context struct {
-	GOARCH        string   // target architecture
-	GOOS          string   // target operating system
-	GOROOT        string   // Go root
-	GOPATH        string   // Go path
-	CgoEnabled    bool     // whether cgo can be used
-	UseAllFiles   bool     // use files regardless of +build lines, file names
-	Compiler      string   // compiler to assume when computing target paths
-	BuildTags     []string // build constraints to match in +build lines
-	ReleaseTags   []string // releases the current release is compatible with
-	InstallSuffix string   // suffix to use in the name of the install dir
+  GOARCH        string   // target architecture
+  GOOS          string   // target operating system
+  GOROOT        string   // Go root
+  GOPATH        string   // Go path
+  CgoEnabled    bool     // whether cgo can be used
+  UseAllFiles   bool     // use files regardless of +build lines, file names
+  Compiler      string   // compiler to assume when computing target paths
+  BuildTags     []string // build constraints to match in +build lines
+  ReleaseTags   []string // releases the current release is compatible with
+  InstallSuffix string   // suffix to use in the name of the install dir
 }
 ```
 
@@ -623,9 +623,9 @@ In addition to the build flags, the flags handled by 'go test' itself are:
 
 ```
 -c
-	Compile the test binary to pkg.test but do not run it
-	(where pkg is the last element of the package's import path).
-	The file name can be changed with the -o flag.
+  Compile the test binary to pkg.test but do not run it
+  (where pkg is the last element of the package's import path).
+  The file name can be changed with the -o flag.
 
 -exec xprog
     Run the test binary using xprog. The behavior is the same as
@@ -636,8 +636,8 @@ In addition to the build flags, the flags handled by 'go test' itself are:
     Do not run the test.
 
 -o file
-	Compile the test binary to the named file.
-	The test still runs (unless -c or -i is specified).
+  Compile the test binary to the named file.
+  The test still runs (unless -c or -i is specified).
 ```
 
 The test binary also accepts flags that control execution of the test; these flags are also accessible by 'go test'. See 'go help testflag' for details.
@@ -718,34 +718,34 @@ The 'go build' and 'go install' commands take a -buildmode argument which indica
 
 ```
 -buildmode=archive
-	Build the listed non-main packages into .a files. Packages named
-	main are ignored.
+  Build the listed non-main packages into .a files. Packages named
+  main are ignored.
 
 -buildmode=c-archive
-	Build the listed main package, plus all packages it imports,
-	into a C archive file. The only callable symbols will be those
-	functions exported using a cgo //export comment. Requires
-	exactly one main package to be listed.
+  Build the listed main package, plus all packages it imports,
+  into a C archive file. The only callable symbols will be those
+  functions exported using a cgo //export comment. Requires
+  exactly one main package to be listed.
 
 -buildmode=c-shared
-	Build the listed main packages, plus all packages that they
-	import, into C shared libraries. The only callable symbols will
-	be those functions exported using a cgo //export comment.
-	Non-main packages are ignored.
+  Build the listed main packages, plus all packages that they
+  import, into C shared libraries. The only callable symbols will
+  be those functions exported using a cgo //export comment.
+  Non-main packages are ignored.
 
 -buildmode=default
-	Listed main packages are built into executables and listed
-	non-main packages are built into .a files (the default
-	behavior).
+  Listed main packages are built into executables and listed
+  non-main packages are built into .a files (the default
+  behavior).
 
 -buildmode=shared
-	Combine all the listed non-main packages into a single shared
-	library that will be used when building with the -linkshared
-	option. Packages named main are ignored.
+  Combine all the listed non-main packages into a single shared
+  library that will be used when building with the -linkshared
+  option. Packages named main are ignored.
 
 -buildmode=exe
-	Build the listed main packages and everything they import into
-	executables. Packages not named main are ignored.
+  Build the listed main packages and everything they import into
+  executables. Packages not named main are ignored.
 ```
 
 <!-- @section -->
@@ -756,27 +756,27 @@ The go command examines the contents of a restricted set of files in each direct
 
 ```
 .go
-	Go source files.
+  Go source files.
 .c, .h
-	C source files.
-	If the package uses cgo or SWIG, these will be compiled with the
-	OS-native compiler (typically gcc); otherwise they will
-	trigger an error.
+  C source files.
+  If the package uses cgo or SWIG, these will be compiled with the
+  OS-native compiler (typically gcc); otherwise they will
+  trigger an error.
 .cc, .cpp, .cxx, .hh, .hpp, .hxx
-	C++ source files. Only useful with cgo or SWIG, and always
-	compiled with the OS-native compiler.
+  C++ source files. Only useful with cgo or SWIG, and always
+  compiled with the OS-native compiler.
 .m
-	Objective-C source files. Only useful with cgo, and always
-	compiled with the OS-native compiler.
+  Objective-C source files. Only useful with cgo, and always
+  compiled with the OS-native compiler.
 .s, .S
-	Assembler source files.
-	If the package uses cgo or SWIG, these will be assembled with the
-	OS-native assembler (typically gcc (sic)); otherwise they
-	will be assembled with the Go assembler.
+  Assembler source files.
+  If the package uses cgo or SWIG, these will be assembled with the
+  OS-native assembler (typically gcc (sic)); otherwise they
+  will be assembled with the Go assembler.
 .swig, .swigcxx
-	SWIG definition files.
+  SWIG definition files.
 .syso
-	System object files.
+  System object files.
 ```
 
 Files of each of these types except .syso may contain build constraints, but the go command stops scanning for build constraints at the first item in the file that is not a blank line or //-style line comment.
@@ -904,71 +904,71 @@ General-purpose environment variables:
 
 ```
 GCCGO
-	The gccgo command to run for 'go build -compiler=gccgo'.
+  The gccgo command to run for 'go build -compiler=gccgo'.
 GOARCH
-	The architecture, or processor, for which to compile code.
-	Examples are amd64, 386, arm, ppc64.
+  The architecture, or processor, for which to compile code.
+  Examples are amd64, 386, arm, ppc64.
 GOBIN
-	The directory where 'go install' will install a command.
+  The directory where 'go install' will install a command.
 GOOS
-	The operating system for which to compile code.
-	Examples are linux, darwin, windows, netbsd.
+  The operating system for which to compile code.
+  Examples are linux, darwin, windows, netbsd.
 GOPATH
-	See 'go help gopath'.
+  See 'go help gopath'.
 GORACE
-	Options for the race detector.
-	See [https://golang.org/doc/articles/race_detector.html](https://golang.org/doc/articles/race_detector.html).
+  Options for the race detector.
+  See [https://golang.org/doc/articles/race_detector.html](https://golang.org/doc/articles/race_detector.html).
 GOROOT
-	The root of the go tree.
+  The root of the go tree.
 ```
 
 Environment variables for use with cgo:
 
 ```
 CC
-	The command to use to compile C code.
+  The command to use to compile C code.
 CGO_ENABLED
-	Whether the cgo command is supported.  Either 0 or 1.
+  Whether the cgo command is supported.  Either 0 or 1.
 CGO_CFLAGS
-	Flags that cgo will pass to the compiler when compiling
-	C code.
+  Flags that cgo will pass to the compiler when compiling
+  C code.
 CGO_CPPFLAGS
-	Flags that cgo will pass to the compiler when compiling
-	C or C++ code.
+  Flags that cgo will pass to the compiler when compiling
+  C or C++ code.
 CGO_CXXFLAGS
-	Flags that cgo will pass to the compiler when compiling
-	C++ code.
+  Flags that cgo will pass to the compiler when compiling
+  C++ code.
 CGO_LDFLAGS
-	Flags that cgo will pass to the compiler when linking.
+  Flags that cgo will pass to the compiler when linking.
 CXX
-	The command to use to compile C++ code.
+  The command to use to compile C++ code.
 ```
 
 Architecture-specific environment variables:
 
 ```
 GOARM
-	For GOARCH=arm, the ARM architecture for which to compile.
-	Valid values are 5, 6, 7.
+  For GOARCH=arm, the ARM architecture for which to compile.
+  Valid values are 5, 6, 7.
 GO386
-	For GOARCH=386, the floating point instruction set.
-	Valid values are 387, sse2.
+  For GOARCH=386, the floating point instruction set.
+  Valid values are 387, sse2.
 ```
 
 Special-purpose environment variables:
 
 ```
 GOROOT_FINAL
-	The root of the installed Go tree, when it is
-	installed in a location other than where it is built.
-	File names in stack traces are rewritten from GOROOT to
-	GOROOT_FINAL.
+  The root of the installed Go tree, when it is
+  installed in a location other than where it is built.
+  File names in stack traces are rewritten from GOROOT to
+  GOROOT_FINAL.
 GO15VENDOREXPERIMENT
-	Set to 1 to enable the Go 1.5 vendoring experiment.
+  Set to 1 to enable the Go 1.5 vendoring experiment.
 GO_EXTLINK_ENABLED
-	Whether the linker should use external linking mode
-	when using -linkmode=auto with code that uses cgo.
-	Set to 0 to disable external linking mode, 1 to enable it.
+  Whether the linker should use external linking mode
+  when using -linkmode=auto with code that uses cgo.
+  Set to 0 to disable external linking mode, 1 to enable it.
 ```
 
 <!-- @section -->
@@ -998,35 +998,35 @@ A few common code hosting sites have special syntax:
 ```
 Bitbucket (Git, Mercurial)
 
-	import "bitbucket.org/user/project"
-	import "bitbucket.org/user/project/sub/directory"
+  import "bitbucket.org/user/project"
+  import "bitbucket.org/user/project/sub/directory"
 
 GitHub (Git)
 
-	import "github.com/user/project"
-	import "github.com/user/project/sub/directory"
+  import "github.com/user/project"
+  import "github.com/user/project/sub/directory"
 
 Google Code Project Hosting (Git, Mercurial, Subversion)
 
-	import "code.google.com/p/project"
-	import "code.google.com/p/project/sub/directory"
+  import "code.google.com/p/project"
+  import "code.google.com/p/project/sub/directory"
 
-	import "code.google.com/p/project.subrepository"
-	import "code.google.com/p/project.subrepository/sub/directory"
+  import "code.google.com/p/project.subrepository"
+  import "code.google.com/p/project.subrepository/sub/directory"
 
 Launchpad (Bazaar)
 
-	import "launchpad.net/project"
-	import "launchpad.net/project/series"
-	import "launchpad.net/project/series/sub/directory"
+  import "launchpad.net/project"
+  import "launchpad.net/project/series"
+  import "launchpad.net/project/series/sub/directory"
 
-	import "launchpad.net/~user/project/branch"
-	import "launchpad.net/~user/project/branch/sub/directory"
+  import "launchpad.net/~user/project/branch"
+  import "launchpad.net/~user/project/branch/sub/directory"
 
 IBM DevOps Services (Git)
 
-	import "hub.jazz.net/git/user/project"
-	import "hub.jazz.net/git/user/project/sub/directory"
+  import "hub.jazz.net/git/user/project"
+  import "hub.jazz.net/git/user/project/sub/directory"
 ```
 
 For code hosted on other servers, import paths may either be qualified with the version control type, or the go tool can dynamically fetch the import path over https/http and discover where the code resides from a <meta> tag in the HTML.
@@ -1211,10 +1211,10 @@ The following flags are recognized by the 'go test' command and control the exec
     being tested. The default is "set" unless -race is enabled,
     in which case it is "atomic".
     The values:
-	set: bool: does this statement run?
-	count: int: how many times does this statement run?
-	atomic: int: count, but correct in multithreaded tests;
-		significantly more expensive.
+  set: bool: does this statement run?
+  count: int: how many times does this statement run?
+  atomic: int: count, but correct in multithreaded tests;
+    significantly more expensive.
     Sets -cover.
 
 -coverpkg pkg1,pkg2,pkg3
@@ -1322,9 +1322,9 @@ Here is an example of an example:
 
 ```
 func ExamplePrintln() {
-	Println("The output of\nthis example.")
-	// Output: The output of
-	// this example.
+  Println("The output of\nthis example.")
+  // Output: The output of
+  // this example.
 }
 ```
 
