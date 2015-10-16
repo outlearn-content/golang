@@ -31,9 +31,7 @@
         {"module" : "the-many-faces-of-struct-tags"},
         {"module" : "betting-the-company-on-go-and-winning"},
         {"module" : "how-go-was-made"},
-        {"module" : "why-learn-go"},
-        {"module" : "command-go"},
-        {"module" : "learnxinyminutes"}
+        {"module" : "why-learn-go"}
       ]
     }
   ],
@@ -63,8 +61,7 @@
     {"olm" : "./modules/betting-the-company-on-go-and-winning.md"},
     {"olm" : "./modules/how-go-was-made.md"},
     {"olm" : "./modules/why-learn-go.md"},
-    {"olm" : "./modules/command-go.md"},
-    {"olm" : "./modules/learnxinyminutes.md"}
+    {"olm" : "./modules/command-go.md"}
   ],
 
   "assets" : [
