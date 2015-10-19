@@ -7,7 +7,7 @@
 "freshnessDate" : 2015-07-28,
 "homepage" : "https://golang.org/cmd/go/",
 "canonicalSource" : "https://golang.org/cmd/go/",
-"license" : "All Rights Reserved"
+"license" : "CC BY 3.0"
 }
 -->
 
